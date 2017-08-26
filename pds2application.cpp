@@ -125,7 +125,11 @@ cin>>ch;
 switch(ch)
 {
 case 1:
+	{
+	
 	cout<<"*****Domestic Tourist Packages*****\n1.North India(NI)\n2.South India(SI)\n\n";
+	cout<<endl<<"NorthIndia package includes Delhi, Agra, Shimla, Kulu-Manali";
+	cout<<endl<<"SouthIndia package includes Madurai, Kannyakumari, Trivandrum, Rameshwaram";
 	bus b11((char*)"NorthIndia",07,900.00,700.00,3500.00);
 	bus b12((char*)"SouthIndia",06,1000.00,800.00,2000.00);
 	cout<<"\n Your choice:";	
@@ -149,10 +153,14 @@ case 1:
 			cout<<"\nWrong choice!!";
 	}
 	break;
+}
 case 2:
+	{
+	
    cout<<"*****International Tour Packages*****\n1.Singapore and Malayasia\n2.Europe tour\n\n";
-   flight f1((char*)"Singapore and Malayasia",01,1500.00,2000.00,30000.00);
-   flight f2((char*)"Europe",02,2500.00,3000.00,60000.00);
+   cout<<endl<<"Europe package includes Paris, Rome, Netherland, Berlin, Brusselles";
+   flight f1((char*)"Singapore and Malayasia",05,1500.00,2000.00,30000.00);
+   flight f2((char*)"Europe",05,2500.00,3000.00,60000.00);
    cout<<"\nYour choice: ";
    cin>>ch_1;
    switch(ch_1)
@@ -170,7 +178,8 @@ case 2:
 	default:
 	    cout<<"\nPlease anter a valid choice";		
    }
-   break;	
+   break;
+}
 }
 return 0;
 }
